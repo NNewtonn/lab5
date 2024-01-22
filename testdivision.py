@@ -6,6 +6,10 @@ class TestSumar(unittest.TestCase):
         self.assertEqual(dividir(-1, 1), -1)
         self.assertEqual(dividir(-1, -1), 1)
         with self.assertRaises(ValueError):
-            dividir(5, 0)
+            try:
+                dividir(5, 0)
+            except:
+                ValueError
+
 if __name__ == '__main__':
     unittest.main()
