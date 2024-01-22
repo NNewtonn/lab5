@@ -9,7 +9,7 @@ class TestSumar(unittest.TestCase):
             try:
                 dividir(5, 0)
             except:
-                ValueError
+                raise ValueError
 
 if __name__ == '__main__':
     unittest.main()
